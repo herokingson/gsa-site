@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
+  <rect width="240" height="80" rx="12" fill="#0b1d17"/>
+  <path d="M30,40 C70,10 130,10 210,40" fill="none" stroke="#a6e22e" stroke-width="6" stroke-linecap="round"/>
+  <text x="120" y="58" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#a6e22e">AIS</text>
+</svg>

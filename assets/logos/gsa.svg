@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#192B1D">
+    <path d="M30 5 55 18 30 31 5 18 30 5Z"/>
+    <path d="M30 21 55 34 30 47 5 34 30 21Z"/>
+  </g>
+  <text x="70" y="40" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" fill="#192B1D">GSA</text>
+</svg>
