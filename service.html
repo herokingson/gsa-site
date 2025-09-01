@@ -172,12 +172,12 @@
     /* Services Grid */
     .grid {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
+      /* grid-template-columns: repeat(12, 1fr); */
       gap: 18px;
     }
 
     .card {
-      grid-column: span 6;
+      /* grid-column: span 6; */
       background: var(--surface);
       border: 1px solid var(--line);
       border-radius: 16px;
@@ -347,7 +347,7 @@
 
     /* Footer */
     footer {
-      margin-top: 50px;
+      /* margin-top: 50px; */
       border-top: 1px solid var(--line);
       background: var(--surface-2);
     }
@@ -819,106 +819,176 @@
       </div>
     </div>
   </section>
-  <main class="container">
+  <main>
     <div class="spacer"></div>
     <!-- Services grid -->
-    <section aria-labelledby="services-title" class="grid" id="services">
-      <h2 class="kicker" id="services-title" style="grid-column: 1 / -1;">Core Offerings</h2>
-      <!-- Colocation -->
-      <article aria-label="Colocation" class="card">
-        <img src="assets/images/service/service-01.png" alt=""
-          class="card-image mb-2 w-full rouded-xl h-[200px] object-cover">
-        <div class="flex items-center gap-3">
-          <div aria-hidden="true" class="icon">
-            <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7Z" stroke="currentColor"
-                stroke-width="1.5"></path>
-              <path d="M7 9h10M7 12h10M7 15h6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
-            </svg>
+    <section aria-labelledby="services-title" class="grid container" id="services">
+      <h2 class="kicker" id="services-title">Our Products & Services</h2>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+        <!-- Colocation -->
+        <article aria-label="Colocation" class="card">
+          <img src="assets/images/service/service-01.png" alt=""
+            class="card-image mb-2 w-full rouded-xl h-[200px] object-cover">
+          <div class="flex items-center gap-3">
+            <div aria-hidden="true" class="icon">
+              <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7Z" stroke="currentColor"
+                  stroke-width="1.5"></path>
+                <path d="M7 9h10M7 12h10M7 15h6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold">Colocation</h3>
           </div>
-          <h3 class="font-bold">Colocation</h3>
-        </div>
-        <p>บริการพื้นที่วางตู้แร็คและโครงสร้างพื้นฐานศูนย์ข้อมูลสำหรับลูกค้าองค์กรและ Hyperscalers</p>
-        <div>
-          <span class="chip">Rack / Cage</span>
-          <span class="chip">Power &amp; Cooling</span>
-          <span class="chip">24×7 Ops</span>
-        </div>
-      </article>
-      <!-- Storage -->
-      <article aria-label="Storage" class="card">
-        <img src="assets/images/service/service-02.png" alt=""
-          class="card-image mb-2 w-full rouded-xl h-[200px] object-cover">
-        <div class="flex items-center gap-3">
-          <div aria-hidden="true" class="icon">
-            <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 7c0-1.657 1.79-3 4-3h10c2.21 0 4 1.343 4 3v2c0 1.657-1.79 3-4 3H7c-2.21 0-4-1.343-4-3V7Z"
-                stroke="currentColor" stroke-width="1.5"></path>
-              <path d="M3 15c0-1.657 1.79-3 4-3h10c2.21 0 4 1.343 4 3v2c0 1.657-1.79 3-4 3H7c-2.21 0-4-1.343-4-3v-2Z"
-                stroke="currentColor" stroke-width="1.5"></path>
-            </svg>
+          <p>บริการพื้นที่วางตู้แร็คและโครงสร้างพื้นฐานศูนย์ข้อมูลสำหรับลูกค้าองค์กรและ Hyperscalers</p>
+          <div>
+            <span class="chip">Rack / Cage</span>
+            <span class="chip">Power &amp; Cooling</span>
+            <span class="chip">24×7 Ops</span>
           </div>
-          <h3 class="font-bold">Storage</h3>
-        </div>
-        <p>โซลูชันพื้นที่จัดเก็บข้อมูลภายในศูนย์ข้อมูล พร้อมความพร้อมใช้งานสูง</p>
-        <div>
-          <span class="chip">Scalable</span>
-          <span class="chip">Secure</span>
-          <span class="chip">Resilient</span>
-        </div>
-      </article>
-      <!-- Cross-Connect -->
-      <article aria-label="Cross-Connect" class="card">
-        <img src="assets/images/service/service-03.png" alt="" class="card-image mb-2 w-full h-[200px] object-cover">
-        <div class="flex items-center gap-3">
-          <div aria-hidden="true" class="icon">
-            <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
-              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"></circle>
-            </svg>
+        </article>
+        <!-- Storage -->
+        <article aria-label="Storage" class="card">
+          <img src="assets/images/service/service-02.png" alt=""
+            class="card-image mb-2 w-full rouded-xl h-[200px] object-cover">
+          <div class="flex items-center gap-3">
+            <div aria-hidden="true" class="icon">
+              <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 7c0-1.657 1.79-3 4-3h10c2.21 0 4 1.343 4 3v2c0 1.657-1.79 3-4 3H7c-2.21 0-4-1.343-4-3V7Z"
+                  stroke="currentColor" stroke-width="1.5"></path>
+                <path d="M3 15c0-1.657 1.79-3 4-3h10c2.21 0 4 1.343 4 3v2c0 1.657-1.79 3-4 3H7c-2.21 0-4-1.343-4-3v-2Z"
+                  stroke="currentColor" stroke-width="1.5"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold">Storage</h3>
           </div>
-          <h3 class="font-bold">Cross-Connect</h3>
-        </div>
-        <p>เชื่อมต่อกันระหว่างอุปกรณ์/ผู้ให้บริการภายในศูนย์ข้อมูล ด้วยสายไฟเบอร์หรือสายทองแดง</p>
-        <div>
-          <span class="chip">Carrier-neutral</span>
-          <span class="chip">Fiber / Copper</span>
-          <span class="chip">Low Latency</span>
-        </div>
-      </article>
-      <!-- Remote Hands via Tenant Portal -->
-      <article aria-label="Remote Hands Service" class="card">
-        <img src="assets/images/service/service-04.png" alt=""
-          class="card-image mb-2 w-full rouded-xl h-[200px] object-cover">
-        <div class="flex items-center gap-3">
-          <div aria-hidden="true" class="icon">
-            <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 12c0-3.866 3.134-7 7-7s7 3.134 7 7v5a2 2 0 0 1-2 2h-3l-2.5 2-2.5-2H7a2 2 0 0 1-2-2v-5Z"
-                stroke="currentColor" stroke-width="1.5"></path>
-            </svg>
+          <p>โซลูชันพื้นที่จัดเก็บข้อมูลภายในศูนย์ข้อมูล พร้อมความพร้อมใช้งานสูง</p>
+          <div>
+            <span class="chip">Scalable</span>
+            <span class="chip">Secure</span>
+            <span class="chip">Resilient</span>
           </div>
-          <h3 class="font-bold">Remote Hands (via Tenant Portal)</h3>
-        </div>
-        <p>บริการสนับสนุนหน้างานระยะไกลสำหรับลูกค้าปัจจุบัน ดำเนินการและติดตามงานผ่าน <em>Tenant Portal</em></p>
-        <div>
-          <span class="chip">Ticketing</span>
-          <span class="chip">SLA-based</span>
-          <span class="chip">24×7</span>
-        </div>
-      </article>
+        </article>
+        <!-- Cross-Connect -->
+        <article aria-label="Cross-Connect" class="card">
+          <img src="assets/images/service/service-03.png" alt="" class="card-image mb-2 w-full h-[200px] object-cover">
+          <div class="flex items-center gap-3">
+            <div aria-hidden="true" class="icon">
+              <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"></circle>
+              </svg>
+            </div>
+            <h3 class="font-bold">Cross-Connect</h3>
+          </div>
+          <p>เชื่อมต่อกันระหว่างอุปกรณ์/ผู้ให้บริการภายในศูนย์ข้อมูล ด้วยสายไฟเบอร์หรือสายทองแดง</p>
+          <div>
+            <span class="chip">Carrier-neutral</span>
+            <span class="chip">Fiber / Copper</span>
+            <span class="chip">Low Latency</span>
+          </div>
+        </article>
+        <!-- Remote Hands via Tenant Portal -->
+        <article aria-label="Remote Hands Service" class="card">
+          <img src="assets/images/service/service-04.png" alt=""
+            class="card-image mb-2 w-full rouded-xl h-[200px] object-cover">
+          <div class="flex items-center gap-3">
+            <div aria-hidden="true" class="icon">
+              <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12c0-3.866 3.134-7 7-7s7 3.134 7 7v5a2 2 0 0 1-2 2h-3l-2.5 2-2.5-2H7a2 2 0 0 1-2-2v-5Z"
+                  stroke="currentColor" stroke-width="1.5"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold">Remote Hands (via Tenant Portal)</h3>
+          </div>
+          <p>บริการสนับสนุนหน้างานระยะไกลสำหรับลูกค้าปัจจุบัน ดำเนินการและติดตามงานผ่าน <em>Tenant Portal</em></p>
+          <div>
+            <span class="chip">Ticketing</span>
+            <span class="chip">SLA-based</span>
+            <span class="chip">24×7</span>
+          </div>
+        </article>
+      </div>
     </section>
     <div class="spacer"></div>
     <!-- Sustainability & Capability Overview -->
-    <section aria-labelledby="capability-title" class="panel" id="capability">
+    <!-- <section aria-labelledby="capability-title" class="panel" id="capability">
       <div>
         <h2 id="capability-title" class="font-bold">Backed by Shareholders</h2>
         <p class="muted">ความร่วมมือของเครือ GULF · Singtel (Nxera) · AIS เพื่อโครงสร้างพื้นฐาน DC ระดับสากล</p>
       </div>
+    </section> -->
+
+    <!-- Campus / Locations -->
+    <section id="campus" style="background:#f8fafc">
+      <div class="container !gap-[20px] !py-[40px]">
+        <h2 class="font-bold">Our Partners</h2>
+        <p class="lead">รองรับสถาปัตยกรรม Primary/DR พร้อมการเชื่อมต่อระดับประเทศ</p>
+        <div class="grid cols-3 campus" style="margin-top:18px">
+          <div class="item flex flex-row gap-5 items-center">
+            <div>
+              <img src="assets/images/gulf.webp" alt="" class="w-60 h-20 object-contain">
+            </div>
+            <div class="flex flex-col">
+              <div class="flex">
+                <b>GULF</b>
+              </div>
+              <div class="lead" style="font-size:14px;margin-top:6px">Energy infrastructure expertise ensuring stable,
+                efficient power.</div>
+            </div>
+          </div>
+          <div class="item flex flex-row gap-5 items-center">
+            <div>
+              <img src="assets/images/signal.webp" alt="" class="w-60 h-20 object-contain">
+            </div>
+            <div class="flex flex-col">
+              <div class="flex">
+                <b>Singtel (Nxera)</b>
+              </div>
+              <div class="lead" style="font-size:14px;margin-top:6px">Thailand’s leading telecom delivering high-speed,
+                secure access.</div>
+            </div>
+          </div>
+          <div class="item flex flex-row gap-5 items-center">
+            <div>
+              <img src="assets/images/aislogo.webp" alt="" class="w-60 h-20 object-contain">
+            </div>
+            <div class="flex flex-col">
+              <div class="flex">
+                <b>AIS</b>
+              </div>
+              <div class="lead" style="font-size:14px;margin-top:6px">ทำเลใกล้กรุงเทพฯ ขยาย capacity ได้
+                และรองรับพลังงานสะอาด</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <div class="spacer"></div>
+
+    <!-- Sustainability -->
+    <section id="sustain" class="cta" style="background:#0b2a1f;color:#ecfdf5">
+      <div class="container grid grid-cols-1 md:grid-cols-2 gap-[24px] items-center !p-[20px]">
+        <div>
+          <h2 class="font-bold">Sustainability & Energy Efficiency</h2>
+          <p class="lead" style="opacity:1; color:#fff;">โซลูชันคูลลิ่ง/ควบคุมพลังงาน (BAS) เพื่อใช้พลังงานอย่างคุ้มค่า
+            พร้อมออปชันไฟฟ้าสีเขียวสำหรับลูกค้า</p>
+          <ul style="margin-top:14px;columns:2;gap:18px">
+            <li>ออปชันพลังงานหมุนเวียน</li>
+            <li>Cold/Hot aisle containment</li>
+            <li>วัด/วิเคราะห์พลังงานแบบเรียลไทม์</li>
+            <li>แผน PUE อย่างต่อเนื่อง</li>
+          </ul>
+        </div>
+        <div class="shot" style="border-color:#0d4733"><img src="assets/images/business-scene.jpg"
+            alt="Energy Efficiency" style="width:100%;height:100%;object-fit:cover"></div>
+      </div>
+    </section>
+
     <div class="spacer"></div>
     <!-- FAQs / scope cues from brief -->
-    <section aria-labelledby="faq-title" class="panel" id="faq">
-      <h2 id="faq-title">FAQs</h2>
+    <section aria-labelledby="faq-title" class="panel container !mt-5" id="faq">
+      <h2 id="faq-title" class="font-bold pt-5">FAQs</h2>
       <div class="faq-item">
         <div aria-expanded="false" class="faq-head" role="button">
           <span>เว็บไซต์รองรับภาษาอะไรบ้าง?</span>
@@ -966,6 +1036,36 @@
       </div>
     </section>
     <div class="spacer"></div>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-[50px]" style="background:#f8fafc">
+      <div class="container grid grid-cols-1 md:grid-cols-2 gap-[28px] items-center py-25 !px-0">
+        <div class="py-[20px]">
+          <h2 class="font-bold">Request Quotation</h2>
+          <p class="lead">ฟอร์มเก็บลีดจะส่งแจ้งเตือนไปยัง contact@gsa-dc.com</p>
+          <form id="leadForm" class="form" style="margin-top:12px">
+            <input type="text" name="name" placeholder="ชื่อ-สกุล" required>
+            <div class="grid cols-2" style="gap:12px;margin:12px 0">
+              <input type="email" name="email" placeholder="อีเมล" required>
+              <input type="tel" name="phone" placeholder="เบอร์โทร" required>
+            </div>
+            <select name="need">
+              <option value="">ความต้องการ</option>
+              <option>Colocation</option>
+              <option>Storage</option>
+              <option>Cross-Connect</option>
+              <option>Remote Hands</option>
+            </select>
+            <textarea name="message" rows="4"
+              placeholder="รายละเอียดเพิ่มเติม (กำลังไฟ/พื้นที่/งบประมาณราวๆ)"></textarea>
+            <button class="btn primary float-right mt-5" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="shot" style="border-radius:16px;overflow:hidden;border:1px solid var(--line)"><img
+            src="assets/images/gsa-01-image.png" alt="GSA DC Team" style="width:100%;height:100%;object-fit:cover">
+        </div>
+      </div>
+    </section>
 
   </main>
   <footer>
