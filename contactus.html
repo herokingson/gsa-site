@@ -9,6 +9,10 @@
   <meta
     content="GSA Data Center products and services: Colocation, Storage, Cross-Connect, and Remote Hands via Tenant Portal. Lead capture form and integrations as per project brief."
     name="description" />
+
+  <!-- slide -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&amp;display=swap"
     rel="stylesheet" />
@@ -499,6 +503,10 @@
     .contact-form .checkbox input {
       margin-right: 10px;
     }
+
+    .swiper-pagination-bullet-active{
+      background: yellow;
+    }
   </style>
 
 </head>
@@ -563,26 +571,125 @@
     <div class="bg-[#edfdf5] h-full">
       <div class="form-container !w-full flex xl:flex-row flex-col !items-stretch">
         <div class="left w-full xl:w-[48%] p-[50px]">
-          <div class="py-5 xl:w-[500px] xl:float-right py-20 flex justify-between flex-col h-full">
+          <div class="py-5 xl:w-[500px] xl:float-right  flex justify-between flex-col h-full">
             <div>
-              <img src="./assets/images/logo-gsa.png" class="mb-5" alt="logo-gsa-main">
-              <h2>เริ่มต้นกับเรา</h2>
+              <h2 class="!text-[45px]">เริ่มต้นกับเรา</h2>
               <p>กรุณากรอกข้อมูลในฟอร์มทางด้านขวาเพื่อขอคำแนะนำหรือข้อมูลเพิ่มเติมจากเรา ทีมงานของเราจะติดต่อกลับในเร็ว
                 ๆ
                 นี้</p>
             </div>
-            <div class="">
-              <p class="text-[14px] text-[#969696] font-light">ดำเนินการและติดตามงานผ่าน
-                กรุณากรอกข้อมูลในฟอร์มทางด้านขวาเพื่อขอคำแนะนำหรือข้อมูลเพิ่มเติมจากเรา</p>
+            <div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- loop data 01 -->
+                  <div class="swiper-slide">
+                    <div class="bg-black/40 rounded-md">
+                      <div class="flex flex-col justify-between h-[300px] py-10 px-10">
+                        <div>
+                          <h3 class="!text-[20px] !font-bold !mb-5 !text-white">I barely to do anything</h3>
+                          <p class="!text-white !mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-5">
+                          <div class="flex flex-row items-center">
+                            <img src="./assets/images/people-avatar.jpg" alt="email icon"
+                              class="w-[40px] h-[40px] rounded-full bg-white/20 flex items-center justify-center mr-5 object-cover">
+                            Name Lastname
+                          </div>
+                          <div class="!text-white">
+                            <ul class="list-none p-0 m-0">
+                              <li class="flex justify-center gap-[8px] mb-[10px]">
+                                <svg class="w-[20px] h-[20px] fill-yellow-400" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24" fill="currentColor">
+                                  <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- loop data 01 -->
+                  <div class="swiper-slide">
+                    <div class="bg-black/40 rounded-md">
+                      <div class="flex flex-col justify-between h-[300px] py-10 px-10">
+                        <div>
+                          <h3 class="!text-[20px] !font-bold !mb-5 !text-white">I barely to do anything</h3>
+                          <p class="!text-white !mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-5">
+                          <div class="flex flex-row items-center">
+                            <img src="./assets/images/people-avatar.jpg" alt="email icon"
+                              class="w-[40px] h-[40px] rounded-full bg-white/20 flex items-center justify-center mr-5 object-cover">
+                            Name Lastname
+                          </div>
+                          <div class="!text-white">
+                            <ul class="list-none p-0 m-0">
+                              <li class="flex justify-center gap-[8px] mb-[10px]">
+                                <svg class="w-[20px] h-[20px] fill-yellow-400" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24" fill="currentColor">
+                                  <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- loop data 01 -->
+                  <div class="swiper-slide">
+                    <div class="bg-black/40 rounded-md">
+                      <div class="flex flex-col justify-between h-[300px] py-10 px-10">
+                        <div>
+                          <h3 class="!text-[20px] !font-bold !mb-5 !text-white">I barely to do anything</h3>
+                          <p class="!text-white !mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-5">
+                          <div class="flex flex-row items-center">
+                            <img src="./assets/images/people-avatar.jpg" alt="email icon"
+                              class="w-[40px] h-[40px] rounded-full bg-white/20 flex items-center justify-center mr-5 object-cover">
+                            Name Lastname
+                          </div>
+                          <div class="!text-white">
+                            <ul class="list-none p-0 m-0">
+                              <li class="flex justify-center gap-[8px] mb-[10px]">
+                                <svg class="w-[20px] h-[20px] fill-yellow-400" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24" fill="currentColor">
+                                  <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
           </div>
         </div>
         <div class="right w-full xl:w-[48%] container">
-          <div class="py-5 w-full xl:w-[600px] xl:float-left py-20">
+          <div class="py-5 w-full xl:w-[570px] xl:float-left py-20">
             <div class="contact-form">
               <h2>กรอกข้อมูลติดต่อ</h2>
               <form action="#" method="POST" class="w=full">
-                <div class="w-full h-[500px] overflow-scroll mb-10 rounded-2xl shadow-xl p-5 bg-white">
+                <div class="w-full mb-10 rounded-2xl shadow-xl p-5 bg-white">
 
                   <label for="name">ชื่อ-นามสกุล</label>
                   <input type="text" id="name" name="name" placeholder="ชื่อ-นามสกุล" required>
@@ -596,29 +703,29 @@
                   <label for="company">องค์กร/ร้านค้า</label>
                   <input type="text" id="company" name="company" placeholder="เช่น GSA Data Co., Ltd." required>
 
-                  <label for="interest">สนใจแพ็คเกจ</label>
+                  <!-- <label for="interest">สนใจแพ็คเกจ</label>
                   <select id="interest" name="interest" required>
                     <option value="Free">Free</option>
                     <option value="Paid">Paid</option>
-                  </select>
+                  </select> -->
 
                   <label for="details">รายละเอียดเพิ่มเติม</label>
                   <textarea id="details" name="details" placeholder="เล่าความต้องการหรือรายละเอียดเพิ่มเติม"
                     required></textarea>
                 </div>
 
-                <div class=" flex">
+                <!-- <div class=" flex">
                   <input type="checkbox" id="consent" name="consent"
                     class="py-[12px] px-[16px] rounded mb-[20px] border border-[#ddd] mr-[10px] !w-auto" required>
                   <label for="consent">ยอมรับให้ติดต่อกลับตามข้อมูลที่ระบุไว้ และยินยอมตามนโยบายความเป็นส่วนตัว</label>
-                </div>
+                </div> -->
                 <button type="submit">ส่งคำขอข้อมูล</button>
               </form>
             </div>
           </div>
         </div>
+
       </div>
-    </div>
   </section>
 
   <!-- Footer -->
@@ -654,6 +761,18 @@
       rights
       reserved.</div>
   </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+  </script>
 </body>
 
 </html>

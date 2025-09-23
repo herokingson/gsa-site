@@ -1,409 +1,18 @@
 <!DOCTYPE html>
-
 <html lang="th">
 
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
-  <title>GSA Data Center — Products &amp; Services</title>
-  <meta
-    content="GSA Data Center products and services: Colocation, Storage, Cross-Connect, and Remote Hands via Tenant Portal. Lead capture form and integrations as per project brief."
-    name="description" />
+  <title>Career - GSA Data Center</title>
+  <meta content="Join our team at GSA Data Center. Explore job opportunities and apply today!" name="description" />
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&amp;display=swap"
     rel="stylesheet" />
   <link href="style.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">
-    @theme {
-        --color-clifford: #da373d;
-      }
-      :root {
-        --bg: #0b2a1f;
-        --brand: #123c2b;
-        --ink: #0f172a;
-        --muted: #475569;
-        --line: #e2e8f0;
-        --lite: #f8fafc;
-      }
-
-    :root {
-      --bg: #ffffff;
-      --surface: #ffffff;
-      --surface-2: #f8fafc;
-      --text: #0f172a;
-      /* slate-900 */
-      --muted: #667085;
-      /* zinc-500-ish */
-      --accent: #16a34a;
-      /* emerald-600 */
-      --accent-2: #34d399;
-      /* emerald-400 */
-      --line: rgba(2, 6, 23, 0.08);
-      --shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
-      --danger: #ef4444;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Noto Sans Thai", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(1200px 600px at 85% -10%, rgba(22, 163, 74, 0.06), transparent 60%),
-        radial-gradient(900px 500px at -10% 10%, rgba(52, 211, 153, 0.06), transparent 60%),
-        var(--bg);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Header */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 0;
-    }
-
-    .logo {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      font-weight: 700;
-      letter-spacing: .3px;
-      color: #0b1220;
-    }
-
-    .logo-badge {
-      width: 32px;
-      height: 32px;
-      display: grid;
-      place-items: center;
-      border-radius: 10px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      color: #ffffff;
-      font-weight: 800;
-    }
-
-    .menu {
-      display: flex;
-      gap: 22px;
-      align-items: center;
-    }
-
-    .menu a {
-      color: var(--muted);
-      font-weight: 600;
-    }
-
-    .menu a[aria-current="page"] {
-      color: var(--text);
-    }
-
-    .btn {
-      padding: 10px 14px;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      color: var(--text);
-      /* font-weight: 700; */
-      box-shadow: var(--shadow);
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-      border: 1px solid transparent;
-      box-shadow: 0 8px 20px rgba(22, 163, 74, 0.25);
-    }
-
-    /* Hero */
-    .hero {
-      padding: 64px 0 30px;
-      border-bottom: 1px solid var(--line);
-      background: var(--surface-2);
-    }
-
-    .hero{
-      background: var(--surface-2);
-    }
-
-    .breadcrumbs {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
-
-    .breadcrumbs a {
-      color: var(--muted);
-    }
-
-    .hero h1 {
-      font-size: clamp(28px, 4.4vw, 44px);
-      margin: 0 0 10px;
-      color: var(--text);
-    }
-
-    .hero p {
-      color: var(--muted);
-      margin: 0;
-      max-width: 760px;
-    }
-
-    /* Services Grid */
-    .grid {
-      display: grid;
-      gap: 18px;
-    }
-
-    .card {
-      /* grid-column: span 6; */
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 22px;
-      position: relative;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
-
-    @media (max-width: 860px) {
-      .card {
-        grid-column: span 12;
-      }
-    }
-
-    .card h3 {
-      margin: 0 0 8px;
-      font-size: 20px;
-      color: var(--text);
-    }
-
-    .card p {
-      margin: 0 0 14px;
-      color: var(--muted);
-    }
-
-    .chip {
-      display: inline-flex;
-      gap: 8px;
-      align-items: center;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-size: 12px;
-      color: var(--muted);
-      margin-right: 6px;
-      background: var(--surface-2);
-    }
-
-    .card .cta {
-      margin-top: 12px;
-      display: flex;
-      gap: 10px;
-    }
-
-    /* Icons */
-    .icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 12px;
-      background: linear-gradient(135deg, rgba(22, 163, 74, 0.12), rgba(52, 211, 153, 0.12));
-      border: 1px solid var(--line);
-      color: var(--accent);
-    }
-
-    .icon svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    /* Two column sections */
-    .two-col {
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 28px;
-    }
-
-    @media (max-width: 960px) {
-      .two-col {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .panel {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 22px;
-      box-shadow: var(--shadow);
-    }
-
-    /* Accordion */
-    .faq-item {
-      border-top: 1px solid var(--line);
-    }
-
-    .faq-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 0;
-      cursor: pointer;
-      font-weight: 700;
-      color: var(--text);
-    }
-
-    .faq-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .35s ease;
-      color: var(--muted);
-    }
-
-    .faq-item.open .faq-body {
-      max-height: 300px;
-      padding-bottom: 14px;
-    }
-
-    /* Lead form */
-    form.lead {
-      display: grid;
-      gap: 12px;
-    }
-
-    .row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-
-    @media (max-width: 720px) {
-      .row {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    label {
-      font-size: 14px;
-      color: var(--muted);
-      display: block;
-      margin-bottom: 6px;
-    }
-
-    input,
-    select,
-    textarea {
-      width: 100%;
-      padding: 14px 12px;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      background: #fff;
-      color: var(--text);
-    }
-
-    input:focus,
-    select:focus,
-    textarea:focus {
-      outline: none;
-      border-color: rgba(22, 163, 74, 0.45);
-      box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.14);
-    }
-
-    textarea {
-      min-height: 120px;
-    }
-
-    .consent {
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    /* Footer */
-    footer {
-      /* margin-top: 50px; */
-      border-top: 1px solid var(--line);
-      background: var(--surface-2);
-    }
-
-    .foot {
-      display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 20px;
-      padding: 22px 0;
-    }
-
-    @media (max-width: 860px) {
-      .foot {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .foot small {
-      color: var(--muted);
-    }
-
-    .foot-links {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    /* Helper */
-    .kicker {
-      color: var(--accent);
-      font-weight: 800;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
-
-    .muted {
-      color: var(--muted);
-    }
-
-    .spacer {
-      height: 30px;
-    }
-
-    input#pdpa {
-      width: auto;
-    }
-  </style>
-  <style>
-    /* === Imported from index.html for header/footer & color sync === */
-
     @theme {
       --color-clifford: #da373d;
     }
@@ -415,6 +24,16 @@
       --muted: #475569;
       --line: #e2e8f0;
       --lite: #f8fafc;
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --text: #0f172a;
+      /* zinc-500-ish */
+      --accent: #16a34a;
+      /* emerald-600 */
+      --accent-2: #34d399;
+      /* emerald-400 */
+      --shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+      --danger: #ef4444;
     }
 
     * {
@@ -436,284 +55,114 @@
       text-decoration: none
     }
 
+    a:hover {
+      text-decoration: underline;
+    }
+
     .container {
       max-width: 1220px;
       margin: 0 auto;
-      padding: 0 16px
+      padding: 0 20px;
     }
 
-    .topbar {
-      background: var(--bg);
-      color: #ecfdf5;
-      font-size: 14px
-    }
-
-    .topbar .container {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      justify-content: space-between;
-      padding: 8px 16px
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px
-    }
-
-    .brand img {
-      height: 34px
-    }
-
-    .btn.ghost:hover {
-      border-color: var(--brand)
-    }
-
-    nav .links {
-      display: flex;
-      gap: 20px;
-    }
-
-    nav {
-      /* display: flex; */
-      gap: 20px;
-      align-items: center;
-    }
-
-    @media (min-width: 900px) {
-      /* nav .links {
-    display: none
-  } */
-
-      .mobile {
-        display: inline-flex
-      }
-
-      .mobile-menu {
-        display: none;
-        border-top: 1px solid var(--line)
-      }
-
-      .mobile-menu.open {
-        display: block
-      }
-
-      .mobile-menu a {
-        display: block;
-        padding: 12px 0;
-        border-bottom: 1px solid var(--line)
-      }
-    }
-
+    /* Hero Section */
+        /* Hero */
     .hero {
-      position: relative;
-      background: linear-gradient(135deg, #ecfdf5, #fff)
+      padding: 64px 0 30px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, #ecfdf5, #fff);
     }
 
-    .hero .wrap::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('assets/images/gsa-05-image.png');
-      background-size: cover, auto;
-      opacity: 0.9;
-    }
-
-    .hero .wrap {
-      display: grid;
-      grid-template-columns: 1.25fr 1fr;
-      gap: 40px;
-      padding: 72px 0
+    .hero{
+      background: linear-gradient(135deg, #ecfdf5, #fff);
     }
 
     .hero h1 {
-      font-size: 42px;
-      line-height: 1.1;
-      margin: 0 0 10px
+      font-size: clamp(28px, 4.4vw, 44px);
+      color: var(--text);
     }
 
     .hero p {
       color: var(--muted);
-      font-size: 18px;
-      margin: 0 0 16px
+      max-width: 760px;
     }
 
-    .shot {
-      aspect-ratio: 4/3;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 20px 60px rgba(2, 6, 23, .12)
-    }
-
-    .float {
-      position: absolute;
-      border-radius: 16px;
-      box-shadow: 0 16px 40px rgba(2, 6, 23, .2);
-      padding: 16px
-    }
-
-    .float.a {
-      left: -24px;
-      bottom: -24px;
-      background: #fff;
-      border: 1px solid var(--line);
-      width: 260px
-    }
-
-    .float.b {
-      right: -24px;
-      top: -24px;
-      background: var(--brand);
-      color: #fff;
-      width: 260px
-    }
-
-    @media (max-width: 900px) {
-      .hero .wrap {
-        grid-template-columns: 1fr;
-        gap: 24px;
-        padding: 48px 0
-      }
-
-      .float {
-        position: relative;
-        left: auto;
-        right: auto;
-        top: auto;
-        bottom: auto;
-        margin-top: 12px
-      }
-    }
-
-
-    h2 {
-      font-size: 32px;
-      margin: 0 0 8px
-    }
-
-    .lead {
-      color: var(--muted)
-    }
-
-    .grid {
+    /* Career Grid */
+    /* .grid {
       display: grid;
-      gap: 20px
-    }
+      gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+    } */
 
-    .cols-4 {
-      grid-template-columns: repeat(4, 1fr)
-    }
-
-    .cols-3 {
-      grid-template-columns: repeat(3, 1fr)
-    }
-
-    .cols-2 {
-      grid-template-columns: repeat(2, 1fr)
-    }
-
-    @media (max-width: 900px) {
-
-      .cols-4,
-      .cols-3 {
-        grid-template-columns: repeat(2, 1fr)
-      }
-    }
-
-    @media (max-width: 640px) {
-
-      .cols-4,
-      .cols-3,
-      .cols-2 {
-        grid-template-columns: 1fr
-      }
-    }
-
-    .card {
-      background: #fff;
+    .grid .card {
+      background: var(--surface);
       border: 1px solid var(--line);
       border-radius: 16px;
-      padding: 20px
+      padding: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     }
 
-    .card.hover:hover {
-      transform: translateY(-2px);
-      transition: .25s;
-      box-shadow: 0 14px 30px rgba(2, 6, 23, .08)
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--text);
     }
 
-    .icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 12px;
-      background: #d1fae5;
+    .card p {
+      color: var(--muted);
+    }
+
+    .card .cta {
+      margin-top: 15px;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--brand)
+      justify-content: flex-end;
     }
 
-    .campus .item {
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 16px;
-      background: #fff
+    .cta a {
+      padding: 10px 15px;
+      background-color: var(--accent);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
     }
 
-    .campus .cap {
-      display: inline-block;
-      background: #ecfdf5;
-      color: var(--brand);
-      font-weight: 700;
-      border-radius: 999px;
-      padding: 4px 10px;
-      font-size: 12px
+    .cta a:hover {
+      background-color: #14b8a6;
     }
 
-    .faq details summary {
-      cursor: pointer;
-      list-style: none;
+    /* Accordion for Job Details */
+    .faq-item {
+      margin-top: 15px;
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-head {
+      padding: 16px 0;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 16px 18px
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--text);
     }
 
-    .faq details summary::-webkit-details-marker {
-      display: none
+    .faq-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: var(--muted);
     }
 
-    .faq .answer {
-      padding: 0 18px 16px
-    }
-
-    .form input,
-    .form textarea,
-    .form select {
-      width: 100%;
-      padding: 12px 14px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      font: inherit
-    }
-
-    footer {
-      background: #0f172a;
-      color: #cbd5e1
-    }
-
-    footer .line {
-      border-top: 1px solid #1e293b;
-      margin-top: 20px
+    .faq-item.open .faq-body {
+      max-height: 300px;
     }
   </style>
 </head>
 
 <body>
+
+
   <!-- Topbar -->
   <div class="topbar">
     <div class="container">
@@ -770,276 +219,107 @@
   <!-- Hero section -->
   <section class="hero">
     <div class="container">
-      <div class="breadcrumbs"><a href="#">GSA</a> / <span>Our Solutions</span></div>
-      <h1 class="font-bold">Our Solutions</h1>
-      <p>หน้านี้รวบรวมบริการหลักของ <strong>GSA Data Center</strong> ตามเอกสารสรุปความต้องการโครงการ — ครอบคลุม Product
-        4 รายการ (Colocation, Storage, Cross-Connect) และ <em>Remote Hands Service</em> ผ่าน Tenant Portal
-        พร้อมเน้นแนวทางความยั่งยืน (Sustainability Focus).</p>
+      <div class="breadcrumbs"><a href="#">GSA</a> / <span>Career</span></div>
+      <h1 class="font-bold">Join Our Team</h1>
+      <p>หน้านี้รวบรวมข้อมูลเกี่ยวกับโอกาสในการทำงานที่ GSA Data Center —
+        รวมถึงตำแหน่งงานที่เปิดรับสมัครและข้อมูลเกี่ยวกับกระบวนการสมัครงาน.
+        เรากำลังมองหาผู้มีความสามารถที่จะเข้ามาร่วมทีมและมีส่วนร่วมในการพัฒนาเทคโนโลยีศูนย์ข้อมูลและบริการต่าง ๆ ของเรา.
+      </p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px">
-        <a class="btn primary" href="#">Get Quote</a>
-
+        <a class="btn primary" href="#apply">Get Quote</a>
       </div>
     </div>
   </section>
+
+  <!-- Career Grid Section -->
   <main>
-    <div class="spacer"></div>
-    <!-- Services grid -->
-    <section aria-labelledby="services-title" class="grid container" id="services">
-      <h2 class="kicker" id="services-title">Our Products & Services</h2>
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
-        <!-- Colocation -->
-        <article aria-label="Colocation" class="card">
-          <img src="assets/images/service/service-01.png" alt=""
-            class="card-image mb-2 w-full rouded-xl h-[350px] pb-2 object-cover">
-          <div class="flex items-center gap-3">
-            <div aria-hidden="true" class="icon">
-              <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7Z" stroke="currentColor"
-                  stroke-width="1.5"></path>
-                <path d="M7 9h10M7 12h10M7 15h6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
-              </svg>
-            </div>
-            <h3 class="font-bold">Colocation</h3>
-          </div>
-          <p>บริการพื้นที่วางตู้แร็คและโครงสร้างพื้นฐานศูนย์ข้อมูลสำหรับลูกค้าองค์กรและ Hyperscalers</p>
-          <div>
-            <span class="chip">Rack / Cage</span>
-            <span class="chip">Power &amp; Cooling</span>
-            <span class="chip">24×7 Ops</span>
-          </div>
-        </article>
-        <!-- Storage -->
-        <article aria-label="Storage" class="card">
-          <img src="assets/images/service/service-02.png" alt=""
-            class="card-image mb-2 w-full rouded-xl h-[350px] pb-2 object-cover">
-          <div class="flex items-center gap-3">
-            <div aria-hidden="true" class="icon">
-              <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 7c0-1.657 1.79-3 4-3h10c2.21 0 4 1.343 4 3v2c0 1.657-1.79 3-4 3H7c-2.21 0-4-1.343-4-3V7Z"
-                  stroke="currentColor" stroke-width="1.5"></path>
-                <path d="M3 15c0-1.657 1.79-3 4-3h10c2.21 0 4 1.343 4 3v2c0 1.657-1.79 3-4 3H7c-2.21 0-4-1.343-4-3v-2Z"
-                  stroke="currentColor" stroke-width="1.5"></path>
-              </svg>
-            </div>
-            <h3 class="font-bold">Storage</h3>
-          </div>
-          <p>โซลูชันพื้นที่จัดเก็บข้อมูลภายในศูนย์ข้อมูล พร้อมความพร้อมใช้งานสูง</p>
-          <div>
-            <span class="chip">Scalable</span>
-            <span class="chip">Secure</span>
-            <span class="chip">Resilient</span>
-          </div>
-        </article>
-        <!-- Cross-Connect -->
-        <article aria-label="Cross-Connect" class="card">
-          <img src="assets/images/service/service-03.png" alt=""
-            class="card-image mb-2 w-full h-[350px] pb-2 object-cover">
-          <div class="flex items-center gap-3">
-            <div aria-hidden="true" class="icon">
-              <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
-                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"></circle>
-              </svg>
-            </div>
-            <h3 class="font-bold">Cross-Connect</h3>
-          </div>
-          <p>เชื่อมต่อกันระหว่างอุปกรณ์/ผู้ให้บริการภายในศูนย์ข้อมูล ด้วยสายไฟเบอร์หรือสายทองแดง</p>
-          <div>
-            <span class="chip">Carrier-neutral</span>
-            <span class="chip">Fiber / Copper</span>
-            <span class="chip">Low Latency</span>
-          </div>
-        </article>
-        <!-- Remote Hands via Tenant Portal -->
-        <article aria-label="Remote Hands Service" class="card">
-          <img src="assets/images/service/service-04.png" alt=""
-            class="card-image mb-2 w-full rouded-xl h-[350px] pb-2 object-cover">
-          <div class="flex items-center gap-3">
-            <div aria-hidden="true" class="icon">
-              <svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 12c0-3.866 3.134-7 7-7s7 3.134 7 7v5a2 2 0 0 1-2 2h-3l-2.5 2-2.5-2H7a2 2 0 0 1-2-2v-5Z"
-                  stroke="currentColor" stroke-width="1.5"></path>
-              </svg>
-            </div>
-            <h3 class="font-bold">Remote Hands (via Tenant Portal)</h3>
-          </div>
-          <p>บริการสนับสนุนหน้างานระยะไกลสำหรับลูกค้าปัจจุบัน ดำเนินการและติดตามงานผ่าน <em>Tenant Portal</em></p>
-          <div>
-            <span class="chip">Ticketing</span>
-            <span class="chip">SLA-based</span>
-            <span class="chip">24×7</span>
-          </div>
-        </article>
-      </div>
-    </section>
-    <div class="spacer"></div>
-    <!-- Sustainability & Capability Overview -->
-    <!-- <section aria-labelledby="capability-title" class="panel" id="capability">
-      <div>
-        <h2 id="capability-title" class="font-bold">Backed by Shareholders</h2>
-        <p class="muted">ความร่วมมือของเครือ GULF · Singtel (Nxera) · AIS เพื่อโครงสร้างพื้นฐาน DC ระดับสากล</p>
-      </div>
-    </section> -->
 
-    <!-- Campus / Locations -->
-    <section id="campus" style="background:#f8fafc">
-      <div class="container !gap-[20px] !py-[40px]">
-        <h2 class="font-bold">Our Partners</h2>
-        <p class="lead">รองรับสถาปัตยกรรม Primary/DR พร้อมการเชื่อมต่อระดับประเทศ</p>
-        <div class="grid cols-3 campus" style="margin-top:18px">
-          <div class="item flex flex-row gap-5 items-center">
-            <div>
-              <img src="assets/images/gulf.webp" alt="" class="w-60 h-20 object-contain">
-            </div>
-            <div class="flex flex-col">
-              <div class="flex">
-                <b>GULF</b>
-              </div>
-              <div class="lead" style="font-size:14px;margin-top:6px">Energy infrastructure expertise ensuring stable,
-                efficient power.</div>
-            </div>
-          </div>
-          <div class="item flex flex-row gap-5 items-center">
-            <div>
-              <img src="assets/images/signal.webp" alt="" class="w-60 h-20 object-contain">
-            </div>
-            <div class="flex flex-col">
-              <div class="flex">
-                <b>Singtel (Nxera)</b>
-              </div>
-              <div class="lead" style="font-size:14px;margin-top:6px">Thailand’s leading telecom delivering high-speed,
-                secure access.</div>
-            </div>
-          </div>
-          <div class="item flex flex-row gap-5 items-center">
-            <div>
-              <img src="assets/images/aislogo.webp" alt="" class="w-60 h-20 object-contain">
-            </div>
-            <div class="flex flex-col">
-              <div class="flex">
-                <b>AIS</b>
-              </div>
-              <div class="lead" style="font-size:14px;margin-top:6px">ทำเลใกล้กรุงเทพฯ ขยาย capacity ได้
-                และรองรับพลังงานสะอาด</div>
-            </div>
+    <div class="container py-10">
+      <section class="grid grid-cols-1 md:grid-cols-3 my-20">
+        <!-- Job 1 -->
+        <div class="card">
+          <img src="./assets/images/career/position-image-job-01.png"
+            class="w-full h-[300px] object-cover object-top shadow-md mb-5" alt="">
+          <h3>Data Center Technician</h3>
+          <p>We are seeking a skilled technician to manage and maintain our data center infrastructure.</p>
+          <div class="cta">
+            <a href="#details1">See Details</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <div class="spacer"></div>
-
-    <!-- Sustainability -->
-    <section id="sustain" class="cta" style="background:#0b2a1f;color:#ecfdf5">
-      <div class="container grid grid-cols-1 md:grid-cols-2 gap-[24px] items-center !p-[20px]">
-        <div>
-          <h2 class="font-bold">Sustainability & Energy Efficiency</h2>
-          <p class="lead" style="opacity:1; color:#fff;">โซลูชันคูลลิ่ง/ควบคุมพลังงาน (BAS) เพื่อใช้พลังงานอย่างคุ้มค่า
-            พร้อมออปชันไฟฟ้าสีเขียวสำหรับลูกค้า</p>
-          <ul style="margin-top:14px;columns:2;gap:18px">
-            <li>ออปชันพลังงานหมุนเวียน</li>
-            <li>Cold/Hot aisle containment</li>
-            <li>วัด/วิเคราะห์พลังงานแบบเรียลไทม์</li>
-            <li>แผน PUE อย่างต่อเนื่อง</li>
-          </ul>
+        <!-- Job 2 -->
+        <div class="card">
+          <img src="./assets/images/career/position-image-job-02.png"
+            class="w-full h-[300px] object-cover object-top shadow-md mb-5" alt="">
+          <h3>Network Engineer</h3>
+          <p>Join us as a network engineer and ensure the optimal performance of our network systems.</p>
+          <div class="cta">
+            <a href="#details2">See Details</a>
+          </div>
         </div>
-        <div class="shot" style="border-color:#0d4733"><img src="assets/images/business-scene.jpg"
-            alt="Energy Efficiency" style="width:100%;height:100%;object-fit:cover"></div>
-      </div>
-    </section>
+        <!-- Job 3 -->
+        <div class="card">
+          <img src="./assets/images/career/position-image-job-03.png"
+            class="w-full h-[300px] object-cover object-top shadow-md mb-5" alt="">
+          <h3>System Administrator</h3>
+          <p>Looking for a system administrator to oversee our servers and ensure they run smoothly.</p>
+          <div class="cta">
+            <a href="#details3">See Details</a>
+          </div>
+        </div>
+      </section>
 
-    <div class="spacer"></div>
-    <!-- FAQs / scope cues from brief -->
-    <section aria-labelledby="faq-title" class=" container !mt-5" id="faq">
-      <div class="panel">
-        <h2 id="faq-title" class="font-bold">FAQs</h2>
-        <div class="faq-item">
-          <div aria-expanded="false" class="faq-head" role="button">
-            <span>เว็บไซต์รองรับภาษาอะไรบ้าง?</span>
+      <!-- FAQ Details Accordion -->
+      <section class="pb-10">
+        <div id="faq1" class="faq-item">
+          <div class="faq-head">
+            <span>How to Apply for a Job?</span>
             <span>+</span>
           </div>
           <div class="faq-body">
-            <p>ไทยและอังกฤษ (Thai / English)</p>
+            <ul>
+              <li>Visit the GSA Data Center careers page.</li>
+              <li>Select the position you wish to apply for.</li>
+              <li>Fill out the application form and upload your resume.</li>
+              <li>Submit your application for review.</li>
+            </ul>
           </div>
         </div>
-        <div class="faq-item">
-          <div aria-expanded="false" class="faq-head" role="button">
-            <span>มีส่วนข่าว (Newsroom) หรือไม่?</span>
+        <div id="faq2" class="faq-item">
+          <div class="faq-head">
+            <span>What Documents Are Required?</span>
             <span>+</span>
           </div>
           <div class="faq-body">
-            <p>มี (สำหรับ Press Release และอัปเดตข่าวสารของบริษัท)</p>
+            <ul>
+              <li>Resume (CV)</li>
+              <li>Cover letter</li>
+              <li>Professional references</li>
+              <li>Certifications or degrees (if applicable)</li>
+            </ul>
           </div>
         </div>
-        <div class="faq-item">
-          <div aria-expanded="false" class="faq-head" role="button">
-            <span>รับสมัครงานดูได้ที่ไหน?</span>
+        <div id="faq3" class="faq-item">
+          <div class="faq-head">
+            <span>What Is the Interview Process Like?</span>
             <span>+</span>
           </div>
           <div class="faq-body">
-            <p>ฝังหรือเชื่อมโยงไปยัง <strong>GULF SuccessFactors</strong> (ปรับลิงก์จริงภายหลัง)</p>
+            <ul>
+              <li>Initial phone interview with HR</li>
+              <li>Second round interview with the hiring manager</li>
+              <li>Technical or skills assessment (if applicable)</li>
+              <li>Final interview and offer negotiation</li>
+            </ul>
           </div>
         </div>
-        <div class="faq-item">
-          <div aria-expanded="false" class="faq-head" role="button">
-            <span>มีการตรวจสอบความปลอดภัยระบบ (Penetration Test) ไหม?</span>
-            <span>+</span>
-          </div>
-          <div class="faq-body">
-            <p>มี — ต้องการการทดสอบจากภายนอกตามข้อกำหนดของโครงการ</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div aria-expanded="false" class="faq-head" role="button">
-            <span>การเก็บข้อมูลส่วนบุคคลเป็นไปตามกฎหมายหรือไม่?</span>
-            <span>+</span>
-          </div>
-          <div class="faq-body">
-            <p>ต้องปฏิบัติตาม PDPA และมาตรฐานความปลอดภัยพื้นฐาน รวมทั้งแนวทาง ISO/IEC 27001</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="spacer"></div>
-
-    <!-- Contact -->
-    <section id="contact" class="mb-[50px]" style="background:#f8fafc">
-      <div class="container grid grid-cols-1 md:grid-cols-2 gap-[28px] items-center py-25 !md:px-0">
-        <div class="py-[20px]">
-          <h2 class="font-bold"> Book a Site Visit</h2>
-          <p class="lead">ฟอร์มเก็บลีดจะส่งแจ้งเตือนไปยัง contact@gsa-dc.com</p>
-          <form id="leadForm" class="form" style="margin-top:12px">
-            <input type="text" name="name" placeholder="ชื่อ-สกุล" required>
-            <div class="grid cols-2" style="gap:12px;margin:12px 0">
-              <input type="email" name="email" placeholder="อีเมล" required>
-              <input type="tel" name="phone" placeholder="เบอร์โทร" required>
-            </div>
-            <select name="need">
-              <option value="">ความต้องการ</option>
-              <option>Colocation</option>
-              <option>Storage</option>
-              <option>Cross-Connect</option>
-              <option>Remote Hands</option>
-            </select>
-            <div class="grid col-1" style="gap:12px;margin:12px 0">
-              <textarea name="message" rows="4"
-                placeholder="รายละเอียดเพิ่มเติม (กำลังไฟ/พื้นที่/งบประมาณราวๆ)"></textarea>
-            </div>
-            <button class="btn primary float-right mt-5" type="submit">Send</button>
-          </form>
-        </div>
-        <div class="shot" style="border-radius:16px;overflow:hidden;border:1px solid var(--line)"><img
-            src="assets/images/gsa-01-image.png" alt="GSA DC Team" style="width:100%;height:100%;object-fit:cover">
-        </div>
-      </div>
-    </section>
-
+      </section>
+    </div>
   </main>
 
   <!-- Footer -->
   <footer>
     <div class="container flex flex-wrap justify-between gap-[20px] items-start !py-[40px]">
-      <div class=" self-center">
+      <div class="self-center">
         <div class="brand"><img alt="GSA" src="assets/images/logo-gsa.png" /><span
             style="font-weight:700;color:#fff;margin-left:8px">GSA Data Center</span></div>
         <p class="lead" style="margin-top:8px">โครงสร้างพื้นฐานศูนย์ข้อมูลสำหรับองค์กรและคลาวด์ พร้อมบริการหลังการขาย
@@ -1071,10 +351,7 @@
   </footer>
 
   <script>
-    // // Year
-    // document.getElementById('year').textContent = new Date().getFullYear();
-
-    // FAQ accordion
+    // FAQ accordion functionality
     document.querySelectorAll('.faq-item').forEach((item) => {
       const head = item.querySelector('.faq-head');
       head.addEventListener('click', () => {
@@ -1082,67 +359,8 @@
         head.setAttribute('aria-expanded', open);
       });
     });
-
-    // Lead form -> open mailto (placeholder). In production, replace with real POST to backend/CMS.
-    // document.getElementById('leadForm').addEventListener('submit', function (e) {
-    //   e.preventDefault();
-    //   const data = Object.fromEntries(new FormData(this).entries());
-    //   if (!document.getElementById('pdpa').checked) {
-    //     alert('กรุณายินยอม PDPA');
-    //     return;
-    //   }
-    //   const subject = encodeURIComponent(`[Lead] ${data.interest || 'GSA Services'} — ${data.name || ''}`);
-    //   const body = encodeURIComponent(
-    //     `Name: ${data.name || ''}\nEmail: ${data.email || ''}\nCompany: ${data.company || ''}\nInterest: ${data.interest || ''}\n\nMessage:\n${data.message || ''}`
-    //   );
-    //   window.location.href = `mailto:contact@gsa-dc.com?subject=${subject}&body=${body}`;
-    // });
-
-    // Mobile menu toggle
-    document.querySelector('.mobile')?.addEventListener('click', function () {
-      document.getElementById('mobileMenu').classList.toggle('open');
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const id = a.getAttribute('href').slice(1);
-        const section = document.getElementById(id);
-        if (section) { e.preventDefault(); section.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-      });
-    });
-
-    // Fake form submit (replace with backend)
-    // document.getElementById('leadForm').addEventListener('submit', function (e) {
-    //   e.preventDefault();
-    //   const data = Object.fromEntries(new FormData(this).entries());
-    //   console.log('Lead form:', data);
-    //   alert('ขอบคุณค่ะ เราจะติดต่อกลับโดยเร็ว!');
-    //   this.reset();
-    // });
-
-
-    (function () {
-      const btn = document.getElementById('hamburgerBtn');
-      const menu = document.getElementById('mobileMenu');
-      const openIcon = btn.querySelector('[data-icon="open"]');
-      const closeIcon = btn.querySelector('[data-icon="close"]');
-
-      function toggle(force) {
-        const isOpen = typeof force === 'boolean' ? force : menu.classList.contains('hidden');
-        menu.classList.toggle('hidden', !isOpen);
-        document.body.classList.toggle('overflow-hidden', isOpen); // กันหน้าเลื่อนตอนเปิดเมนู
-        btn.setAttribute('aria-expanded', isOpen);
-        openIcon.classList.toggle('hidden', isOpen);
-        closeIcon.classList.toggle('hidden', !isOpen);
-      }
-
-      btn.addEventListener('click', () => toggle());
-      menu.addEventListener('click', (e) => { if (e.target.matches('a')) toggle(false); });
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggle(false); });
-    })();
-
   </script>
+
 </body>
 
 </html>
