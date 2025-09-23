@@ -612,7 +612,7 @@ footer .line {
   <section id="contact" style="background:#f8fafc">
     <div class="container grid grid-cols-1 md:grid-cols-2 gap-[28px] items-center !p-[20px]">
       <div class="py-[20px]">
-        <h2 class="font-bold">Request Quotation</h2>
+        <h2 class="font-bold"> Book a Site Visit</h2>
         <p class="lead">ฟอร์มเก็บลีดจะส่งแจ้งเตือนไปยัง contact@gsa-dc.com</p>
         <form id="leadForm" class="form" style="margin-top:12px">
           <input type="text" name="name" placeholder="ชื่อ-สกุล" required>
@@ -627,7 +627,10 @@ footer .line {
             <option>Cross-Connect</option>
             <option>Remote Hands</option>
           </select>
-          <textarea name="message" rows="4" placeholder="รายละเอียดเพิ่มเติม (กำลังไฟ/พื้นที่/งบประมาณราวๆ)"></textarea>
+          <div class="grid col-1" style="gap:12px;margin:12px 0">
+            <textarea name="message" rows="4"
+              placeholder="รายละเอียดเพิ่มเติม (กำลังไฟ/พื้นที่/งบประมาณราวๆ)"></textarea>
+          </div>
           <button class="btn primary float-right mt-5" type="submit">Send</button>
         </form>
       </div>
