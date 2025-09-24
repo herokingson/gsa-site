@@ -226,7 +226,7 @@
         เรากำลังมองหาผู้มีความสามารถที่จะเข้ามาร่วมทีมและมีส่วนร่วมในการพัฒนาเทคโนโลยีศูนย์ข้อมูลและบริการต่าง ๆ ของเรา.
       </p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px">
-        <a class="btn primary" href="#apply">Get Quote</a>
+        <a class="btn primary" href="#apply">Explore Careers</a>
       </div>
     </div>
   </section>
@@ -243,7 +243,7 @@
           <h3>Data Center Technician</h3>
           <p>We are seeking a skilled technician to manage and maintain our data center infrastructure.</p>
           <div class="cta">
-            <a href="#details1">See Details</a>
+            <a href="#details1" class="btn primary">See Details</a>
           </div>
         </div>
         <!-- Job 2 -->
@@ -253,7 +253,7 @@
           <h3>Network Engineer</h3>
           <p>Join us as a network engineer and ensure the optimal performance of our network systems.</p>
           <div class="cta">
-            <a href="#details2">See Details</a>
+            <a href="#details2" class="btn primary">See Details</a>
           </div>
         </div>
         <!-- Job 3 -->
@@ -263,7 +263,7 @@
           <h3>System Administrator</h3>
           <p>Looking for a system administrator to oversee our servers and ensure they run smoothly.</p>
           <div class="cta">
-            <a href="#details3">See Details</a>
+            <a href="#details3" class="btn primary">See Details</a>
           </div>
         </div>
       </section>
@@ -359,6 +359,29 @@
         head.setAttribute('aria-expanded', open);
       });
     });
+
+    document.querySelector('.mobile')?.addEventListener('click', function () {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+    (function () {
+      const btn = document.getElementById('hamburgerBtn');
+      const menu = document.getElementById('mobileMenu');
+      const openIcon = btn.querySelector('[data-icon="open"]');
+      const closeIcon = btn.querySelector('[data-icon="close"]');
+
+      function toggle(force) {
+        const isOpen = typeof force === 'boolean' ? force : menu.classList.contains('hidden');
+        menu.classList.toggle('hidden', !isOpen);
+        document.body.classList.toggle('overflow-hidden', isOpen); // กันหน้าเลื่อนตอนเปิดเมนู
+        btn.setAttribute('aria-expanded', isOpen);
+        openIcon.classList.toggle('hidden', isOpen);
+        closeIcon.classList.toggle('hidden', !isOpen);
+      }
+
+      btn.addEventListener('click', () => toggle());
+      menu.addEventListener('click', (e) => { if (e.target.matches('a')) toggle(false); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggle(false); });
+    })();
   </script>
 
 </body>

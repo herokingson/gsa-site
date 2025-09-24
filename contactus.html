@@ -328,7 +328,7 @@
     }
 
     .form-container .right button {
-      background-color: var(--accent);
+      background-color: #123d2b;
       color: white;
       padding: 12px 20px;
       font-size: 18px;
@@ -338,7 +338,7 @@
     }
 
     .form-container .right button:hover {
-      background-color: #1D4ED8;
+      opacity: 0.9;
     }
 
     .row {
@@ -492,7 +492,7 @@
     }
 
     .contact-form button:hover {
-      background-color: #2563EB;
+      opacity: 0.9;
     }
 
     .contact-form .checkbox {
@@ -504,8 +504,11 @@
       margin-right: 10px;
     }
 
+    .swiper-pagination-bullet{
+      background: white;
+    }
     .swiper-pagination-bullet-active{
-      background: yellow;
+      background: #fec800;
     }
   </style>
 
@@ -583,7 +586,7 @@
                 <div class="swiper-wrapper">
                   <!-- loop data 01 -->
                   <div class="swiper-slide">
-                    <div class="bg-black/40 rounded-md">
+                    <div class="bg-white/20 rounded-md">
                       <div class="flex flex-col justify-between h-[300px] py-10 px-10">
                         <div>
                           <h3 class="!text-[20px] !font-bold !mb-5 !text-white">I barely to do anything</h3>
@@ -719,7 +722,7 @@
                     class="py-[12px] px-[16px] rounded mb-[20px] border border-[#ddd] mr-[10px] !w-auto" required>
                   <label for="consent">ยอมรับให้ติดต่อกลับตามข้อมูลที่ระบุไว้ และยินยอมตามนโยบายความเป็นส่วนตัว</label>
                 </div> -->
-                <button type="submit">ส่งคำขอข้อมูล</button>
+                <button type="submit" class="!btn !primary">ส่งคำขอข้อมูล</button>
               </form>
             </div>
           </div>
@@ -728,10 +731,72 @@
       </div>
   </section>
 
+  <!-- Campus / Locations -->
+  <section id="campus" style="background:#f8fafc">
+    <div class="container !gap-[20px] !py-[40px]">
+      <!-- <h2 class="font-bold">Our Partners</h2>
+      <p class="lead">รองรับสถาปัตยกรรม Primary/DR พร้อมการเชื่อมต่อระดับประเทศ</p> -->
+      <div class="grid cols-3 campus" style="margin-top:18px">
+        <div class="item flex flex-col justify-between w-full">
+          <div class="flex flex-row gap-5 items-center">
+            <div>
+              <img src="assets/images/gulf.webp" alt="" class="w-60 h-20 object-contain">
+            </div>
+            <div class="flex flex-col">
+              <div class="flex">
+                <b>GULF</b>
+              </div>
+              <div class="lead" style="font-size:14px;margin-top:6px">Energy infrastructure expertise ensuring stable,
+                efficient power.</div>
+            </div>
+          </div>
+          <div class="flex self-center w-full">
+            <a href="#" class="btn primary w-full text-center mt-5 !py-1">Log In</a>
+          </div>
+        </div>
+        <div class="item flex flex-col justify-between w-full">
+          <div class="flex flex-row gap-5 items-center">
+            <div>
+              <img src="assets/images/signal.webp" alt="" class="w-60 h-20 object-contain">
+            </div>
+            <div class="flex flex-col">
+              <div class="flex">
+                <b>Singtel (Nxera)</b>
+              </div>
+              <div class="lead" style="font-size:14px;margin-top:6px">Thailand’s leading telecom delivering
+                high-speed,
+                secure access.</div>
+            </div>
+          </div>
+          <div class="flex self-center w-full">
+            <a href="#" class="btn primary w-full text-center mt-5 !py-1">Log In</a>
+          </div>
+        </div>
+        <div class="item flex flex-col justify-between w-full">
+          <div class="flex flex-row gap-5 items-center">
+            <div>
+              <img src="assets/images/aislogo.webp" alt="" class="w-60 h-20 object-contain">
+            </div>
+            <div class="flex flex-col">
+              <div class="flex">
+                <b>AIS</b>
+              </div>
+              <div class="lead" style="font-size:14px;margin-top:6px">ทำเลใกล้กรุงเทพฯ ขยาย capacity ได้
+                และรองรับพลังงานสะอาด</div>
+            </div>
+          </div>
+          <div class="flex self-center w-full">
+            <a href="#" class="btn primary w-full text-center mt-5 !py-1">Log In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
     <div class="container flex flex-wrap justify-between gap-[20px] items-start !py-[40px]">
-      <div class=" self-center">
+      <div class="self-center">
         <div class="brand"><img alt="GSA" src="assets/images/logo-gsa.png" /><span
             style="font-weight:700;color:#fff;margin-left:8px">GSA Data Center</span></div>
         <p class="lead" style="margin-top:8px">โครงสร้างพื้นฐานศูนย์ข้อมูลสำหรับองค์กรและคลาวด์ พร้อมบริการหลังการขาย
@@ -772,6 +837,30 @@
         dynamicBullets: true,
       },
     });
+
+    // Mobile menu toggle
+    document.querySelector('.mobile')?.addEventListener('click', function () {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+ (function () {
+      const btn = document.getElementById('hamburgerBtn');
+      const menu = document.getElementById('mobileMenu');
+      const openIcon = btn.querySelector('[data-icon="open"]');
+      const closeIcon = btn.querySelector('[data-icon="close"]');
+
+      function toggle(force) {
+        const isOpen = typeof force === 'boolean' ? force : menu.classList.contains('hidden');
+        menu.classList.toggle('hidden', !isOpen);
+        document.body.classList.toggle('overflow-hidden', isOpen); // กันหน้าเลื่อนตอนเปิดเมนู
+        btn.setAttribute('aria-expanded', isOpen);
+        openIcon.classList.toggle('hidden', isOpen);
+        closeIcon.classList.toggle('hidden', !isOpen);
+      }
+
+      btn.addEventListener('click', () => toggle());
+      menu.addEventListener('click', (e) => { if (e.target.matches('a')) toggle(false); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggle(false); });
+    })();
   </script>
 </body>
 
